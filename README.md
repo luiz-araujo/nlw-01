@@ -6,10 +6,10 @@
   <img alt="Project programing languages count" src="https://img.shields.io/github/languages/count/luiz-araujo/nlw-01?color=34cb79">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/luiz-araujo/nlw-01?color=34cb79">
   <a href="https://www.linkedin.com/in/luiz-carlos-araujo-junior/">
-    <img alt="Made by Luiz Araújo" src="https://img.shields.io/badge/made%20by-luiz-araujo-%20?color=34cb79">
+    <img alt="Made by Luiz Araújo" src="https://img.shields.io/badge/made%20by-Luiz Araújo-%20?color=34cb79">
   </a>
   <img alt="GitHub license" src="https://img.shields.io/github/license/luiz-araujo/nlw-01?color=34cb79">
-</p> 
+</p>
 
 <p align="center">
 <a href="https://insomnia.rest/run/?label=Ecoleta&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fluiz-araujo%2Fecoleta%2Fmaster%2F.github%2Finsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
@@ -21,12 +21,12 @@
 </h3>
 
 <p align="center">
-  <a href="#-nlw">Next Level Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-how-to-run">How to run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#nlw">Next Level Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#how-to-run">How to run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#built-with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#get-in-touch">Get in touch!</a>
 </p>
@@ -55,9 +55,9 @@ To access the layout use [Figma](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28
 
 To clone and run the application you will need:
 
-* [Git](https://git-scm.com)
-* [Node](https://nodejs.org/)
-* [Yarn](https://yarnpkg.com/) 
+- [Git](https://git-scm.com)
+- [Node](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
 
 From your command line:
 
@@ -69,7 +69,7 @@ $ git clone https://github.com/luiz-araujo/nlw-01.git
 $ cd nlw-01
 ```
 
-### API 
+### API
 
 ```bash
 # Go into the API folder repository
@@ -78,6 +78,7 @@ $ cd server
 # Install dependencies
 $ yarn install
 ```
+
 In order to connect to the database, you will need to enter the access informations into a ormconfig.json. You can find more about it [here](https://typeorm.io/#/using-ormconfig).
 
 ```bash
@@ -96,7 +97,7 @@ $ yarn dev:server
 ### Web
 
 ```bash
-# in another tab of the terminal install the frontend dependencies and run it 
+# in another tab of the terminal install the frontend dependencies and run it
 
 # Go into the frontend repository
 $ cd web
@@ -127,9 +128,11 @@ $ yarn install
 Before running the application on your device, you need to change the ip configuration.
 
 [api.ts](https://github.com/luiz-araujo/nlw-01/blob/master/mobile/src/services/api.ts)
+
 ```javascript
   baseURL: "http://192.168.0.17:3333",
 ```
+
 Replace 192.168.0.17 with your own machine's ip.
 
 Then run the application.
@@ -148,11 +151,11 @@ $ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto
 
 ## Built With
 
-* [NodeJS](https://nodejs.org/en/) - designed to build scalable network applications
-* [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces
-* [React Native](https://reactnative.dev/) - A JavaScript library for developing native apps(iOS and Android)
-* [Expo](https://expo.io/) - A module that give us access to a lot of cool stuff while developing React Native apps.
-* [TypeScript](https://www.typescriptlang.org/) - TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+- [NodeJS](https://nodejs.org/en/) - designed to build scalable network applications
+- [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [React Native](https://reactnative.dev/) - A JavaScript library for developing native apps(iOS and Android)
+- [Expo](https://expo.io/) - A module that give us access to a lot of cool stuff while developing React Native apps.
+- [TypeScript](https://www.typescriptlang.org/) - TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 
 ## How to contribute
 
@@ -174,7 +177,7 @@ This project is under the MIT license. See the [LICENSE](https://github.com/luiz
 </a>&nbsp;&nbsp;&nbsp;
 <a href="mailto:luizcaj@yahoo.com.br" target="_blank" >
   <img alt="Email - Luiz Araújo" src="https://img.shields.io/badge/Email--%23F8952D?style=social&logo=yahoo!">
-</a> 
+</a>
 
 ---
 
