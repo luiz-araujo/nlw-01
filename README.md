@@ -156,6 +156,7 @@ $ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto
 - [React Native](https://reactnative.dev/) - A JavaScript library for developing native apps(iOS and Android)
 - [Expo](https://expo.io/) - A module that give us access to a lot of cool stuff while developing React Native apps.
 - [TypeScript](https://www.typescriptlang.org/) - TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+- [Lottie](https://lottiefiles.com/) - The animation library from AirBnB an JSON-based animation file format.
 
 ## How to contribute
 

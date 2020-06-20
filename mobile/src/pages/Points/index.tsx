@@ -16,6 +16,7 @@ import styles from "./styles";
 
 import api from "../../services/api";
 import * as Location from "expo-location";
+import LottieView from "lottie-react-native";
 
 interface Item {
   id: number;
@@ -45,6 +46,7 @@ const Points = () => {
     0,
     0,
   ]);
+  const [loading, setLoading] = useState(true);
   const navigation = useNavigation();
   const route = useRoute();
   const routeParams = route.params as Params;
@@ -65,6 +67,8 @@ const Points = () => {
       const { latitude, longitude } = location.coords;
 
       setInitialPosition([latitude, longitude]);
+
+      setLoading(false);
     }
 
     loadPosition();
@@ -121,37 +125,45 @@ const Points = () => {
         </Text>
 
         <View style={styles.mapContainer}>
-          {initialPosition[0] !== 0 && (
-            <MapView
-              style={styles.map}
-              loadingEnabled={initialPosition[0] === 0}
-              initialRegion={{
-                latitude: initialPosition[0],
-                longitude: initialPosition[1],
-                latitudeDelta: 0.014,
-                longitudeDelta: 0.014,
-              }}
-            >
-              {points.map((point) => (
-                <Marker
-                  key={String(point.id)}
-                  style={styles.mapMarker}
-                  onPress={() => handleNavigateToDetail(point.id)}
-                  coordinate={{
-                    latitude: point.latitude,
-                    longitude: point.longitude,
-                  }}
-                >
-                  <View style={styles.mapMarkerContainer}>
-                    <Image
-                      style={styles.mapMarkerImage}
-                      source={{ uri: point.image_url }}
-                    />
-                    <Text style={styles.mapMarkerTitle}>{point.name}</Text>
-                  </View>
-                </Marker>
-              ))}
-            </MapView>
+          {loading ? (
+            <LottieView
+              source={require("../../assets/loading.json")}
+              loop
+              autoPlay
+            />
+          ) : (
+            initialPosition[0] !== 0 && (
+              <MapView
+                style={styles.map}
+                loadingEnabled={initialPosition[0] === 0}
+                initialRegion={{
+                  latitude: initialPosition[0],
+                  longitude: initialPosition[1],
+                  latitudeDelta: 0.014,
+                  longitudeDelta: 0.014,
+                }}
+              >
+                {points.map((point) => (
+                  <Marker
+                    key={String(point.id)}
+                    style={styles.mapMarker}
+                    onPress={() => handleNavigateToDetail(point.id)}
+                    coordinate={{
+                      latitude: point.latitude,
+                      longitude: point.longitude,
+                    }}
+                  >
+                    <View style={styles.mapMarkerContainer}>
+                      <Image
+                        style={styles.mapMarkerImage}
+                        source={{ uri: point.image_url }}
+                      />
+                      <Text style={styles.mapMarkerTitle}>{point.name}</Text>
+                    </View>
+                  </Marker>
+                ))}
+              </MapView>
+            )
           )}
         </View>
       </View>
